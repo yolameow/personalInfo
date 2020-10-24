@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043E6F0E25437CC90073A53B /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E6F0D25437CC90073A53B /* PasswordViewController.swift */; };
+		043E6F1225444E690073A53B /* InvalidLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E6F1125444E690073A53B /* InvalidLoginViewController.swift */; };
 		0452568A254323120011A0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04525689254323120011A0E2 /* AppDelegate.swift */; };
 		0452568C254323120011A0E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452568B254323120011A0E2 /* SceneDelegate.swift */; };
 		0452568E254323120011A0E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452568D254323120011A0E2 /* ViewController.swift */; };
 		04525691254323120011A0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0452568F254323120011A0E2 /* Main.storyboard */; };
 		04525693254323240011A0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04525692254323240011A0E2 /* Assets.xcassets */; };
 		04525696254323240011A0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04525694254323240011A0E2 /* LaunchScreen.storyboard */; };
+		045256AC25435D6C0011A0E2 /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045256AB25435D6C0011A0E2 /* UsernameViewController.swift */; };
+		04918B552544CFF200931F53 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918B542544CFF200931F53 /* HelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043E6F0D25437CC90073A53B /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		043E6F1125444E690073A53B /* InvalidLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidLoginViewController.swift; sourceTree = "<group>"; };
 		04525686254323120011A0E2 /* personalInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = personalInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04525689254323120011A0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0452568B254323120011A0E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		04525692254323240011A0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04525695254323240011A0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04525697254323240011A0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045256AB25435D6C0011A0E2 /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
+		04918B542544CFF200931F53 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		04525688254323120011A0E2 /* personalInfo */ = {
 			isa = PBXGroup;
 			children = (
-				04525689254323120011A0E2 /* AppDelegate.swift */,
-				0452568B254323120011A0E2 /* SceneDelegate.swift */,
-				0452568D254323120011A0E2 /* ViewController.swift */,
-				0452568F254323120011A0E2 /* Main.storyboard */,
-				04525692254323240011A0E2 /* Assets.xcassets */,
-				04525694254323240011A0E2 /* LaunchScreen.storyboard */,
-				04525697254323240011A0E2 /* Info.plist */,
+				0452569F254327240011A0E2 /* supporting files */,
+				045256A1254327D90011A0E2 /* view controllers */,
+				0452569E254326F90011A0E2 /* storyboards */,
+				045256A4254328A80011A0E2 /* resourses */,
 			);
 			path = personalInfo;
+			sourceTree = "<group>";
+		};
+		0452569E254326F90011A0E2 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0452568F254323120011A0E2 /* Main.storyboard */,
+				04525694254323240011A0E2 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		0452569F254327240011A0E2 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				04525689254323120011A0E2 /* AppDelegate.swift */,
+				0452568B254323120011A0E2 /* SceneDelegate.swift */,
+				04525697254323240011A0E2 /* Info.plist */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		045256A1254327D90011A0E2 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				043E6F1125444E690073A53B /* InvalidLoginViewController.swift */,
+				0452568D254323120011A0E2 /* ViewController.swift */,
+				045256AB25435D6C0011A0E2 /* UsernameViewController.swift */,
+				043E6F0D25437CC90073A53B /* PasswordViewController.swift */,
+				04918B542544CFF200931F53 /* HelloViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		045256A4254328A80011A0E2 /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				04525692254323240011A0E2 /* Assets.xcassets */,
+			);
+			path = resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0452568E254323120011A0E2 /* ViewController.swift in Sources */,
+				043E6F0E25437CC90073A53B /* PasswordViewController.swift in Sources */,
+				04918B552544CFF200931F53 /* HelloViewController.swift in Sources */,
+				043E6F1225444E690073A53B /* InvalidLoginViewController.swift in Sources */,
 				0452568A254323120011A0E2 /* AppDelegate.swift in Sources */,
+				045256AC25435D6C0011A0E2 /* UsernameViewController.swift in Sources */,
 				0452568C254323120011A0E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = personalInfo/Info.plist;
+				INFOPLIST_FILE = "personalinfo/supporting files/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = personalInfo/Info.plist;
+				INFOPLIST_FILE = "personalinfo/supporting files/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
