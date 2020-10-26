@@ -9,15 +9,15 @@ import UIKit
 
 class PhotoViewController: UIViewController {
     
-    @IBOutlet var myphoto: UIImageView!
+    @IBOutlet var photoView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        photoView.image = UIImage(named: "photo")
     }
     
     @IBAction func logOutAction() {
         dismiss(animated: true)
     }
-    
+
 }

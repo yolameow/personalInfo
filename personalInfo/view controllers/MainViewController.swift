@@ -7,15 +7,18 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var loginButtonOutlet: UIButton!
     
-    
     var user = User(name: "Olga", username: "Username", password: "123")
 
+    override func viewDidLoad() {
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -32,21 +35,23 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func loginButton() {
-        if usernameTextField.text == user.username && passwordTextField.text == user.password {
+        if usernameTextField.text == user.username &&
+            passwordTextField.text == user.password {
             performSegue(withIdentifier: "logged", sender: self)
             usernameTextField.text = ""
             passwordTextField.text = ""
-        } else
-        { performSegue(withIdentifier: "invalidlogged", sender: self)}
-        passwordTextField.text = ""
+        } else {
+            performSegue(withIdentifier: "invalidlogged", sender: self)}
+            passwordTextField.text = ""
     }
     
-  //  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    //    usernameTextField.resignFirstResponder()
-    //    if textField == passwordTextField {
-    //        passwordTextField.becomeFirstResponder()
-//}
-   //    return true
-  //  }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        usernameTextField.resignFirstResponder()
+        if textField == passwordTextField {
+            passwordTextField.becomeFirstResponder()
 }
+      return true
+    }
+}
+
+   

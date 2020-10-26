@@ -213,20 +213,30 @@
                                     <action selector="loginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="bj9-Ph-sRJ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXk-Ki-h2d">
+                                <rect key="frame" x="16" y="65" width="288" height="418"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PBT-Mh-9Xd"/>
                         <color key="backgroundColor" red="0.64997716251061011" green="1" blue="0.74076705191377767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PBT-Mh-9Xd" firstAttribute="trailing" secondItem="hXk-Ki-h2d" secondAttribute="trailing" constant="16" id="1by-mp-2Ab"/>
                             <constraint firstItem="PBT-Mh-9Xd" firstAttribute="trailing" secondItem="9I8-xj-9QG" secondAttribute="trailing" constant="20" id="2PV-dv-AE6"/>
+                            <constraint firstItem="hXk-Ki-h2d" firstAttribute="centerY" secondItem="alC-cn-67s" secondAttribute="centerY" id="4cg-UN-qoQ"/>
+                            <constraint firstItem="PBT-Mh-9Xd" firstAttribute="bottom" secondItem="hXk-Ki-h2d" secondAttribute="bottom" constant="16" id="9Ca-H4-N4b"/>
+                            <constraint firstItem="hXk-Ki-h2d" firstAttribute="centerX" secondItem="alC-cn-67s" secondAttribute="centerX" id="TS4-bi-L5Z"/>
                             <constraint firstItem="9I8-xj-9QG" firstAttribute="top" secondItem="PBT-Mh-9Xd" secondAttribute="top" constant="20" id="YtM-bC-ecs"/>
                             <constraint firstItem="9I8-xj-9QG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PBT-Mh-9Xd" secondAttribute="leading" symbolic="YES" id="uWz-MD-sQk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="photo" image="photo" catalog="system" id="3Cr-Ue-igJ"/>
+                    <connections>
+                        <outlet property="photoView" destination="hXk-Ki-h2d" id="7Mc-Iu-cx7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bux-Tf-FDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557.5" y="854.57746478873241"/>
+            <point key="canvasLocation" x="3555" y="855"/>
         </scene>
         <!--Hello-->
         <scene sceneID="eYr-iu-iYc">
@@ -237,8 +247,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhD-YC-ZJC">
-                                <rect key="frame" x="208" y="20" width="92" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="245" y="20" width="55" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
                                     <action selector="logOutAction" destination="3lb-tT-Mgb" eventType="touchUpInside" id="3oA-K0-5Kc"/>
@@ -265,9 +275,9 @@
                             <constraint firstItem="6QZ-FO-hPO" firstAttribute="trailing" secondItem="WhD-YC-ZJC" secondAttribute="trailing" constant="20" id="P8z-Vm-eVt"/>
                             <constraint firstItem="zVL-Xy-n6Z" firstAttribute="centerX" secondItem="sXB-e5-PAw" secondAttribute="centerX" id="Vht-qX-xcJ"/>
                             <constraint firstItem="zVL-Xy-n6Z" firstAttribute="centerY" secondItem="sXB-e5-PAw" secondAttribute="centerY" id="Z3R-4E-8bm"/>
-                            <constraint firstItem="WhD-YC-ZJC" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6QZ-FO-hPO" secondAttribute="leading" constant="208" id="ZHr-FZ-AzJ"/>
                             <constraint firstItem="20c-3J-E0C" firstAttribute="centerY" secondItem="sXB-e5-PAw" secondAttribute="centerY" id="fSA-iK-cKF"/>
                             <constraint firstItem="WhD-YC-ZJC" firstAttribute="top" secondItem="6QZ-FO-hPO" secondAttribute="top" constant="20" id="fVK-aW-0ax"/>
+                            <constraint firstItem="WhD-YC-ZJC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6QZ-FO-hPO" secondAttribute="leading" symbolic="YES" id="mlm-as-Nij"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hello" image="person.fill" catalog="system" id="4wm-ch-bGi"/>
@@ -418,8 +428,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-p2-LvG">
-                                <rect key="frame" x="248" y="20" width="52" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="245" y="20" width="55" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
                                     <action selector="logIutAction" destination="3tp-ZG-ilG" eventType="touchUpInside" id="lBT-0r-Shg"/>
